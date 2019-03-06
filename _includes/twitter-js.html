@@ -4,14 +4,16 @@ const twitter = (container) => {
   const button = document.createElement('a');
   button.innertText = 'Twitter';
   button.setAttribute('class', 'twitter-share-button');
+  button.setAttribute('data-hashtags, 'mocaspike150');
+  button.setAttribute('data-show-count, true);
 
   const js = document.createElement('script');
   js.src = 'https://platform.twitter.com/widgets.js'
   js.async = true;
 
-  container.appendChild(button)
-  document.body.appendChild(js)
+  container.appendChild(button);
+  document.body.appendChild(js);
 }
 
-twitter(document.body)
+twitter(document.body);
 </script>
