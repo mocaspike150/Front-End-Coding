@@ -2,8 +2,8 @@ const twitter = (container) => {
   const button = document.createElement('a');
   button.innertText = 'Twitter';
   button.setAttribute('class', 'twitter-share-button');
-  button.setAttribute('data-hashtags, 'mocaspike150');
-  button.setAttribute('data-show-count, true);
+  button.setAttribute('data-hashtags', 'mocaspike150');
+  button.setAttribute('data-show-count', true);
 
   const js = document.createElement('script');
   js.src = 'https://platform.twitter.com/widgets.js'
