@@ -1,12 +1,17 @@
 <script>
-const button = document.createElement('a');
-button.innertText = 'Twitter';
-button.setAttribute('class', 'twitter-share-button');
 
-const js = document.createElement('script');
-js.src = 'https://platform.twitter.com/widgets.js'
-js.async = true;
+const twitter = (container) => {
+  const button = document.createElement('a');
+  button.innertText = 'Twitter';
+  button.setAttribute('class', 'twitter-share-button');
 
-document.body.appendChild(button)
-document.body.appendChild(js)
+  const js = document.createElement('script');
+  js.src = 'https://platform.twitter.com/widgets.js'
+  js.async = true;
+
+  container.appendChild(button)
+  document.body.appendChild(js)
+}
+
+twitter(document.body)
 </script>
