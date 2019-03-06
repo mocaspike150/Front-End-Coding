@@ -1,0 +1,12 @@
+<script>
+const button = document.createElement('a');
+button.innertText = 'Twitter';
+button.setAttribute('class', 'twitter-share-button');
+
+const js = document.createElement('script');
+js.src = 'https://platform.twitter.com/widgets.js'
+js.async = true;
+
+document.body.appendChild(button)
+document.body.appendChild(js)
+</script>
