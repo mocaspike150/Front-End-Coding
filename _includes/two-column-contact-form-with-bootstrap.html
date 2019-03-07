@@ -1,13 +1,11 @@
 
 <style>
-
-
-* {
+contact * {
   box-sizing: border-box;
 }
 
 /* Style inputs */
-input[type=text], input[type=email], select, textarea {
+contact input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -16,7 +14,7 @@ input[type=text], input[type=email], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+contact input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -24,19 +22,19 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+contact input[type=submit]:hover {
   background-color: #45a049;
 }
 
 /* Style the container/contact section */
-.container {
+contact.container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
 }
 
 /* Create two columns that float next to eachother */
-.column {
+contact.column {
   float: left;
   width: 80%;
   margin-top: 6px;
@@ -44,7 +42,7 @@ input[type=submit]:hover {
 }
 
 /* Clear floats after the columns */
-.row:after {
+contact.row:after {
   content: "";
   display: table;
   clear: both;
@@ -52,7 +50,7 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+  contact.column, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
